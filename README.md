@@ -1,2 +1,2 @@
-# Estructura_de_Base_de_Datos
-Cursos de Estructura de Datos
+# Estructura de Base de Datos
+Curso de Estructura de Datos
