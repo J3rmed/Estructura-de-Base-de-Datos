@@ -11,3 +11,6 @@ de las salas nos interesa el nombre y la cantidad de
 camas que tiene. También se sabe que un empleado
 trabaja en una única sala y que en una sala trabajan
 varios empleados. Lo mismo ocurre con los pacientes.
+## Modelo Entidad Relación
+
+![MER Tarea 1](mer_tarea1.png)
