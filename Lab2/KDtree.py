@@ -16,7 +16,7 @@ class KDTree:
 
     def _build(self, points, depth):
         """
-        El arbol KD-Tree se construye usando la mediana empirica del eje activo.
+        El arbol KD-Tree se construye usando la mediana empirica.
 
         En este ejercicio los puntos de prueba se generan de forma homogenea
         (distribucion uniforme en el plano), por lo que ordenar por el eje
