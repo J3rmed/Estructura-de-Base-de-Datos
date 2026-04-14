@@ -46,6 +46,6 @@ pip install matplotlib
 
 Debido a que el KD-tree emplea recusividad y cálculo de distancias sobre hiperplanos, tiene cierta sobrecarga (overhead) en tiempos de ejecución inicial en comparación a un loop "for" limpio. 
 
-No obstante, al correr `analisis.py` sobre los datos sintéticos de coordenadas, la gráfica revela el punto de cruce. Típicamente en implementaciones de Python nativo, **el Árbol-KD cruza y comienza a ser infaliblemente más rápido que una lista a partir la escala de los $N = 50$ a $N = 100$ puntos.**
+No obstante, al correr `analisis.py` sobre los datos sintéticos de coordenadas, la gráfica revela el punto de cruce. Típicamente en la implementacion, **el Árbol-KD cruza y comienza a ser más rápido que una lista a partir la escala de los $N = 50$ - $N = 100$ puntos.**
 
 Al entrar la problemática real donde se tienen **10,000 puntos en la ciudad**, el KD-Tree reduce el tiempo por una fracción asombrosamente superior gracias a su aproximación de complejidad temporal de búsqueda $\approx O(\log N)$. Un array de fuerza resiente el peso del cálculo de las raíces cuadradas, escalando de manera vertical $O(N)$.
