@@ -10,7 +10,9 @@ A través de un recorrido iterativo convencional ("Fuerza Bruta"), los tiempos d
 
 Este repositorio resuelve el problema codificando un árbol KD-Tree puro desde cero (soportando múltiples dimensiones). El KD-Tree ataca dos aspectos críticos:
 1. **Range Search:** Extraer todos los puntos a un radio $r$ de un punto.
-2. **Nearest Neighbor:** Detectar matemáticamente el punto de entrega de forma óptima.
+![radio_search](radio_search.png)
+3. **Nearest Neighbor:** Detectar matemáticamente el punto de entrega de forma óptima.
+![nearest neighbor](nearest_neighbor.png)
 
 ## Criterio Usado Para La Mediana
 
