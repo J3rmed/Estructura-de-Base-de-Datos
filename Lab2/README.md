@@ -12,6 +12,13 @@ Este repositorio resuelve el problema codificando un árbol KD-Tree puro desde c
 1. **Range Search:** Extraer todos los puntos a un radio $r$ de un punto.
 2. **Nearest Neighbor:** Detectar matemáticamente el punto de entrega de forma óptima.
 
+## Criterio Usado Para La Mediana
+
+Durante la construccion del KD-Tree, en cada nivel se ordenan los puntos segun el eje activo y se selecciona como pivote el elemento central del arreglo ordenado.
+
+Esta decision se documenta de forma explicita porque, en terminos estadisticos, la mediana puede discutirse desde la distribucion de los datos. En este trabajo se utilizaron datos sinteticos homogeneos, generados de manera uniforme en el espacio de coordenadas, por lo que tomar el punto central de la muestra ordenada sobre cada eje resulta consistente con la mediana empirica empleada para balancear el arbol.
+
+En otras palabras, para este ejercicio no se busco dividir el plano por areas bajo la curva equivalentes, sino repartir de manera aproximadamente equilibrada la cantidad de puntos a izquierda y derecha del corte.
 ## Estructura del Repositorio
 
 - `KDtree.py`: Archivo core. Contiene clases `Node`, `KDTree` y la alternativa iterativa `FuerzaBruta` (en forma de lista). En el árbol se manejan los algoritmos de partición y las podas de búsquedas que omiten sub-planos incorrectos.
