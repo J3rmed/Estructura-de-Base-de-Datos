@@ -1,4 +1,4 @@
-# Logistics KD-Tree
+# KD-Tree
 **Autor:** Jefferson Lizarazo Arias (Algunas partes del código fueron desarrolladas con ayuda de IA)
 
 Este repositorio implementa una solución de estructuración de datos basada en **Árboles KD (KD-Tree)** para optimizar la logística de entregas en una gran ciudad. 
