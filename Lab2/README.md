@@ -5,7 +5,7 @@ Este repositorio implementa una solución de estructuración de datos basada en 
 
 ## Contexto del Problema
 
-Dado un conjunto estático de 10,000 puntos de entrega (coordenadas X, Y correspondientes a metros), existen problemas funcionales al querer descubrir de manera concurrente cuáles son las entregas más cercanas respecto a una ubicación, o aquellos puntos atrapados dentro de un radio en específico. 
+Dado un conjunto estático de 10,000 puntos de entrega (coordenadas X,Y), existen problemas funcionales al querer descubrir de manera concurrente cuáles son las entregas más cercanas respecto a una ubicación, o aquellos puntos atrapados dentro de un radio en específico. 
 A través de un recorrido iterativo convencional ("Fuerza Bruta"), los tiempos decrecen drásticamente a medida que aumenta la densidad poblacional.
 
 Este repositorio resuelve el problema codificando un árbol KD-Tree puro desde cero (soportando múltiples dimensiones). El KD-Tree ataca dos aspectos críticos:
