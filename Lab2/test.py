@@ -33,7 +33,7 @@ class TestKDTree(unittest.TestCase):
         self.assertAlmostEqual(kd_dist, bf_dist)
         
     def test_edge_cases(self):
-        target = (-1000, -1000)  # Objetivo lejos de la nube
+        target = (-1000, -1000)  # Objetivo lejos
         kd_point, _ = self.kdtree.nearest_neighbor(target)
         self.assertIsNotNone(kd_point)
 
