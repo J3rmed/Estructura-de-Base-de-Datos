@@ -23,7 +23,9 @@ class KDTree:
         correspondiente y tomar el elemento central sirve para
         representar la mediana muestral y mantener particiones balanceadas.
         """
-        
+        if not points:
+            return None
+            
         axis = depth % self.k
         # Ordenar los puntos a lo largo del eje actual
         points.sort(key=lambda x: x[axis])
