@@ -34,7 +34,7 @@ pip install matplotlib
    ```
    *Nota: Las figuras son bloqueantes, para que aparezca la siguiente comprobación visual necesitas cerrar la ventana actual de matplotlib.*
 
-2. **Para correr el Benchmark de velocidad:**
+2. **Para correr el analisis de velocidad:**
    ```bash
    python analisis.py
    ```
