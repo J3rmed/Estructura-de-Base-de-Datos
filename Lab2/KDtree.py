@@ -15,6 +15,14 @@ class KDTree:
         self.root = self._build(list(points), depth=0)
 
     def _build(self, points, depth):
+        """
+        El arbol KD-Tree se construye usando la mediana empirica del eje activo.
+
+        En este ejercicio los puntos de prueba se generan de forma homogenea
+        (distribucion uniforme en el plano), por lo que ordenar por el eje
+        correspondiente y tomar el elemento central sirve para
+        representar la mediana muestral y mantener particiones balanceadas.
+        """
         if not points:
             return None
         
@@ -58,7 +66,7 @@ class KDTree:
 
     def nearest_neighbor(self, target):
         """
-        Encuentra el vecino más cercano a 'target'.
+        Encuentra el vecino más cercano al objetivo.
         """
         self.best_point = None
         self.best_dist = float('inf')
