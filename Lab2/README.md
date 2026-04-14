@@ -42,6 +42,7 @@ pip install matplotlib
 ## Análisis y Resultados
 
 ### ¿Para qué tamaño de datos el Árbol KD comienza a ser más rápido que listas (fuerza bruta)?
+![MER Tarea 1](analisis.png)
 
 Debido a que el KD-tree emplea recusividad y cálculo de distancias sobre hiperplanos, tiene cierta sobrecarga (overhead) en tiempos de ejecución inicial en comparación a un loop "for" limpio. 
 
