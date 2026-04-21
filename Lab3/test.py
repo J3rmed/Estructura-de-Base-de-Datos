@@ -128,7 +128,7 @@ def visualize_nearest_neighbor():
     
     if nn_point:
         ax.scatter([nn_point.x], [nn_point.y], c='blue', s=40, label='Vecino más cercano')
-        ax.plot([target_point.x, nn_point.x], [target_point.y, nn_point.y], 'k--', label=f'Distancia: {nn_dist:.2f}')
+        ax.plot([target_point.x, nn_point.x], [target_point.y, nn_point.y], 'k--')
         
     ax.set_xlim(0, MAX_VAL)
     ax.set_ylim(0, MAX_VAL)
