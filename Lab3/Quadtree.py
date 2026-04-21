@@ -14,7 +14,7 @@ class Point:
 
 class Rectangle:
     """
-    Rectangle represented by its center (x, y) and half-dimension (w, h).
+    Un rectángulo centrado en (x,y) con ancho w y alto h.
     """
     def __init__(self, x, y, w, h):
         self.x = x
@@ -37,10 +37,6 @@ class Rectangle:
                     other_range.north < self.south)
     
     def distance_from_point(self, point):
-        """
-        Minimum Euclidean distance from a point to this rectangle.
-        If the point is inside the rectangle, the distance is 0.
-        """
         dx = max(self.west - point.x, 0, point.x - self.east)
         dy = max(self.south - point.y, 0, point.y - self.north)
         return math.sqrt(dx*dx + dy*dy)
