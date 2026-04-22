@@ -65,9 +65,6 @@ class QuadTree:
         
         self.divided = True
         
-        # Opcional: bajar los puntos existentes a los nuevos hijos
-        # para implementaciones estrictas, no es estrictamente necesario,
-        # pero es bueno para la limpieza del árbol y que sólo las hojas contengan puntos (poda).
         for p in self.points:
             self.ne.insert(p) or self.nw.insert(p) or self.se.insert(p) or self.sw.insert(p)
         self.points = []
@@ -128,7 +125,7 @@ class QuadTree:
                     best_point = p
             return best_point, best_dist
 
-        # Heurística: buscar primero en el cuadrante donde se ubica el target_point (o el más cercano)
+        # Buscar primero en el cuadrante donde se ubica el target_point (o el más cercano)
         children = [self.nw, self.ne, self.sw, self.se]
         children.sort(key=lambda child: child.boundary.distance_from_point(target_point))
 
