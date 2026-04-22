@@ -23,7 +23,7 @@ def test_system():
     print("Iniciando Pruebas Unitarias...")
     N_POINTS = 10000
     MIN_VAL = 0
-    MAX_VAL = 10000 # 10km x 10km area
+    MAX_VAL = 10000 # area
     
     points = generate_random_points(N_POINTS, MIN_VAL, MAX_VAL)
     
@@ -67,7 +67,7 @@ def visualize_range_search():
     N_POINTS = 500 # Menos puntos para que la visualización sea limpia
     MIN_VAL = 0
     MAX_VAL = 10000 
-    random.seed(42) # Mismos puntos para ambas visualizaciones
+    random.seed(42) # Semilla aleatoria
     points = generate_random_points(N_POINTS, MIN_VAL, MAX_VAL)
     boundary = Rectangle(MAX_VAL/2, MAX_VAL/2, MAX_VAL/2, MAX_VAL/2)
     qt = QuadTree(boundary, capacity=4)
@@ -111,14 +111,14 @@ def visualize_nearest_neighbor():
     N_POINTS = 500
     MIN_VAL = 0
     MAX_VAL = 10000 
-    random.seed(42) # Mismos puntos que en range_search
+    random.seed(42) # Semilla aleatoria
     points = generate_random_points(N_POINTS, MIN_VAL, MAX_VAL)
     boundary = Rectangle(MAX_VAL/2, MAX_VAL/2, MAX_VAL/2, MAX_VAL/2)
     qt = QuadTree(boundary, capacity=4)
     for p in points:
         qt.insert(p)
         
-    target_point = Point(5000, 5000) # Mismo punto de objetivo
+    target_point = Point(5000, 5000) 
     nn_point, nn_dist = qt.nearest_neighbor(target_point)
     
     fig, ax = plt.subplots(figsize=(8, 8))
